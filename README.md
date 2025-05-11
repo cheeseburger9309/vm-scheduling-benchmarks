@@ -1,5 +1,3 @@
-Certainly! Here’s a **complete README.md template** for your GitHub repository, tailored to your project and the details from your slides. You can copy-paste and further customize as needed.
-
 ---
 
 # Profiling & Analysis of Scheduling in Vanilla Processes vs Virtual Machines (QEMU/KVM)
