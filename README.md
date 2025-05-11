@@ -1,11 +1,10 @@
----
 
 # Profiling & Analysis of Scheduling in Vanilla Processes vs Virtual Machines (QEMU/KVM)
 
 **CS 594 Project – Sai Kasyap Jannabhatla**  
 *May 2025*
 
----
+
 
 ## Overview
 
