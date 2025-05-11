@@ -1,0 +1,26 @@
+<!-- Optimized VirtIO configuration for QEMU/KVM -->
+<domain type='kvm'>
+  <devices>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2' cache='directsync' io='native'/>
+      <source file='/var/lib/libvirt/images/optimized-vm.qcow2'/>
+      <target dev='vda' bus='virtio'/>
+      <iothreads>4</iothreads>
+      <queue iothread='1'/>
+    </disk>
+    <interface type='network'>
+      <model type='virtio'/>
+      <driver queues='4'/>
+    </interface>
+    <controller type='scsi' index='0' model='virtio-scsi'>
+      <driver iothread='2'/>
+    </controller>
+  </devices>
+  <cputune>
+    <vcpupin vcpu='0' cpuset='2'/>
+    <vcpupin vcpu='1' cpuset='3'/>
+    <emulatorpin cpuset='0-1'/>
+    <iothreadpin iothread='1' cpuset='4'/>
+    <iothreadpin iothread='2' cpuset='5'/>
+  </cputune>
+</domain>
