@@ -193,5 +193,3 @@ CS 594 Project, 2025
 *For questions or collaboration, please open an issue or contact me via GitHub.*
 
 ---
-
-Let me know if you want to include example output, screenshots, or further usage details!
